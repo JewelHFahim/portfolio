@@ -6,13 +6,13 @@ const Navbar = () => {
   const menItems = (
     <>
       <li>
-        <Link>About</Link>
+        <Link to="/about">About</Link>
       </li>
       <li>
         <Link>Experience</Link>
       </li>
       <li>
-        <Link>Projects</Link>
+        <Link to= "/project">Projects</Link>
       </li>
       <li>
         <Link to = "/contact">Contact</Link>
