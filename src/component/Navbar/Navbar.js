@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Navbar.css"
 
 const Navbar = () => {
   const menItems = (
@@ -14,7 +15,7 @@ const Navbar = () => {
         <Link>Projects</Link>
       </li>
       <li>
-        <Link>Contact</Link>
+        <Link to = "/contact">Contact</Link>
       </li>
     </>
   );
@@ -47,12 +48,13 @@ const Navbar = () => {
               {menItems}
             </ul>
           </div>
-          <a
-            href="!#"
-            className="btn btn-ghost normal-case text-xl text-secondary font-bold"
+          <Link
+            to = "/"
+            className="btn btn-ghost normal-case text-xl text-secondary font-bold border border-secondary rounded-full"
           >
             JHF
-          </a>
+            <span class="hex"></span>
+          </Link>
         </div>
         <div className="navbar-end">
 
