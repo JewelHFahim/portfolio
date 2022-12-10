@@ -1,5 +1,5 @@
 import React from "react";
-import { BsFacebook, BsLinkedin, BsInstagram, BsTwitter, BsWhatsapp } from "react-icons/bs";
+import { BsFacebook, BsLinkedin, BsInstagram, BsTwitter, BsWhatsapp, BsTelephoneForward } from "react-icons/bs";
 
 const Contact = () => {
 
@@ -9,11 +9,19 @@ const Contact = () => {
       <div className="ml-5">
         <p className="text-3xl pb-16">Let's Connect ...</p>
         <div className="grid grid-cols-3 text-5xl px-20">
-        <BsLinkedin className="m-4 hover:text-secondary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ...">Linkedin</BsLinkedin>
+        <BsLinkedin className="m-4 hover:text-secondary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."/>
+        
         <BsInstagram className="m-4 hover:text-secondary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." />
+
         <BsFacebook className="m-4 hover:text-secondary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." />
+
         <BsTwitter className="m-4 hover:text-secondary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." />
+
         <BsWhatsapp className="m-4 hover:text-secondary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." />
+
+        <BsTelephoneForward className="m-4 hover:text-secondary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." />
+
+
         </div>
 
 
