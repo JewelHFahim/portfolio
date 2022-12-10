@@ -5,10 +5,10 @@ const Contact = () => {
 
 
   return (
-    <div className=" text-slate-300 grid grid-cols-2 gap-5 pt-16">
+    <div className=" text-slate-300 grid lg:grid-cols-2 gap-5 py-16">
       <div className="ml-5">
-        <p className="text-3xl pb-16">Let's Connect ...</p>
-        <div className="grid grid-cols-3 text-5xl px-20">
+        <p className="text-3xl pb-16"> Get in touch </p>
+        <div className="grid grid-cols-3 gap-8 text-xl lg:text-5xl lg:px-20">
         <BsLinkedin className="m-4 hover:text-secondary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."/>
         
         <BsInstagram className="m-4 hover:text-secondary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." />
@@ -42,21 +42,21 @@ const Contact = () => {
             <input
               type="text"
               placeholder="Name"
-              className="input input-bordered input-info rounded-none bg-[#203555]"
+              className="input input-bordered input-secondary rounded-none bg-[#203555]"
             />
             <input
               type="text"
               placeholder="Email"
-              className="input input-bordered input-info rounded-none bg-[#203555]"
+              className="input input-bordered input-secondary rounded-none bg-[#203555]"
             />
           </div>
           <input
             type="text"
             placeholder="Subject"
-            className="input input-bordered input-info rounded-none w-full mb-3 bg-[#203555]"
+            className="input input-bordered input-secondary rounded-none w-full mb-3 bg-[#203555]"
           />
           <textarea
-            className="textarea textarea-info rounded-none h-28 mb-3 w-full bg-[#203555]"
+            className="textarea textarea-secondary rounded-none h-28 mb-3 w-full bg-[#203555]"
             placeholder="Message"
           ></textarea>
 
