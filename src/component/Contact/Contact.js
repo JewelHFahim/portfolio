@@ -9,18 +9,24 @@ const Contact = () => {
       <div className="ml-5">
         <p className="text-3xl pb-16"> Get in touch </p>
         <div className="grid grid-cols-3 gap-8 text-xl lg:text-5xl lg:px-20">
-        <BsLinkedin className="m-4 hover:text-secondary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."/>
+
+        <a href="https://www.linkedin.com/in/jewelhfahim/" target="_blank" rel="noreferrer noopener">
+        <BsLinkedin className="m-4 hover:text-secondary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."/></a>
         
         <BsInstagram className="m-4 hover:text-secondary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." />
 
-        <BsFacebook className="m-4 hover:text-secondary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." />
+        <a href="https://www.facebook.com/Xewel.H.Fahim" target="_blank" rel="noreferrer noopener">
+        <BsFacebook className="m-4 hover:text-secondary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." /></a>
 
-        <BsTwitter className="m-4 hover:text-secondary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." />
+        <a href="https://twitter.com/jewelhfahim" target="_blank" rel="noreferrer noopener">
+        <BsTwitter className="m-4 hover:text-secondary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." /></a>
 
-        <BsWhatsapp className="m-4 hover:text-secondary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." />
+        <a href="https://web.whatsapp.com/" target="_blank" rel="noreferrer noopener">
+        <BsWhatsapp className="m-4 hover:text-secondary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." /></a>
 
-        <BsTelephoneForward className="m-4 hover:text-secondary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." />
 
+        <div className="tooltip tooltip-top" data-tip="+8801911209322">
+        <BsTelephoneForward className="m-4 hover:text-secondary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." />        </div>
 
         </div>
 

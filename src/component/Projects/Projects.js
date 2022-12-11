@@ -1,5 +1,7 @@
 import React from "react";
 import { BiLinkExternal } from "react-icons/bi";
+import { FaUserCog } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
 import medilaw from "../../Assets/medilaw.jpg";
 import education from "../../Assets/education.jpg";
 import lensmart from "../../Assets/lensmart.jpg";
@@ -16,47 +18,134 @@ const Projects = () => {
       </div>
 
       <div className="grid lg:grid-cols-3 gap-5 mt-5">
+      
+        {/* LensMart */}
+        <div className="container border p-4 rounded-lg">
+          <img src={lensmart} alt="lensmart" className="image rounded-lg" />
+          <div className="overlay">
+            <div className="text w-full px-6">
+              <h1 className="text-lg mb-2">LensMart</h1>
+              <p className="text-sm my-5 text-justify text-slate-400">
+                Reselle website: Responsive, Authentication, Payment Getway
+              </p>
 
-      {/* LensMart */}
-      <div className="container border p-4 rounded-lg">
-      <img src={lensmart} alt="lensmart" className="image rounded-lg" />
-      <div className="overlay">
-      <div className="text w-full px-6">
-        <h1 className="text-lg mb-2">LensMart</h1>  
-        <p className="text-sm my-5 text-justify text-slate-400"> Reselle website: Responsive, Authentication, Payment Getway</p> 
-        <a href="https://lens-mart.web.app/" target="_blank" rel="noreferrer noopener">
-        <button className="btn btn-sm btn-outline btn-secondary mt-4 rounded-sm">Details<BiLinkExternal className="ml-2 text-lg"/> </button>
-        </a>
-       </div>
-      </div>
+              <a
+                href="https://lens-mart.web.app/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <button className="btn btn-sm btn-outline btn-secondary m-2 rounded-sm">
+                  <FaUserCog className="text-2xl" />{" "}
+                </button>
+              </a>
+              <a
+                href="https://github.com/JewelHFahim/lens-mart-client"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <button className="btn btn-sm btn-outline btn-secondary m-2 rounded-sm">
+                  <AiFillGithub className="text-2xl" />{" "}
+                </button>
+              </a>
+              <a
+                href="https://github.com/JewelHFahim/lens-mart-server"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <button className="btn btn-sm btn-outline btn-secondary m-2 rounded-sm">
+                  <BiLinkExternal className="text-2xl" />{" "}
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* MediLaw */}
+        <div className="container border p-4 rounded-lg">
+          <img src={medilaw} alt="lensmart" className="image rounded-lg" />
+          <div className="overlay">
+            <div className="text w-full px-6">
+              <h1 className="text-lg mb-2">MediLaw</h1>
+              <p className="text-sm my-5 text-justify text-slate-400">
+                Personal law service website: Review Section, Responsive,
+                Authentication,
+              </p>
+
+              <a
+                href="https://medilaw-bc770.web.app/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <button className="btn btn-sm btn-outline btn-secondary m-2 rounded-sm">
+                  <FaUserCog className="text-2xl" />{" "}
+                </button>
+              </a>
+              <a
+                href="https://github.com/JewelHFahim/medilaw-client"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <button className="btn btn-sm btn-outline btn-secondary m-2 rounded-sm">
+                  <AiFillGithub className="text-2xl" />{" "}
+                </button>
+              </a>
+              <a
+                href="https://github.com/JewelHFahim/medilaw-server"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <button className="btn btn-sm btn-outline btn-secondary m-2 rounded-sm">
+                  <BiLinkExternal className="text-2xl" />{" "}
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Education with excellence */}
+        <div className="container border p-4 rounded-lg">
+          <img src={education} alt="lensmart" className="image rounded-lg" />
+          <div className="overlay">
+            <div className="text w-full px-6">
+              <h1 className="text-lg mb-2">Education With Excellence</h1>
+              <p className="text-sm my-5 text-justify text-slate-400">
+                Education website: Login, Signup, Responsive, Authentication,
+                Online Reading, PDF Download
+              </p>
+
+              <a
+                href="https://education-with-excellence.web.app/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <button className="btn btn-sm btn-outline btn-secondary m-2 rounded-sm">
+                  <FaUserCog className="text-2xl" />{" "}
+                </button>
+              </a>
+              <a
+                href="https://github.com/JewelHFahim/education-with-excellence-client"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <button className="btn btn-sm btn-outline btn-secondary m-2 rounded-sm">
+                  <AiFillGithub className="text-2xl" />{" "}
+                </button>
+              </a>
+              <a
+                href="https://github.com/JewelHFahim/education-with-excellence-server"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <button className="btn btn-sm btn-outline btn-secondary m-2 rounded-sm">
+                  <BiLinkExternal className="text-2xl" />{" "}
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      {/* MediLaw */}
-      <div className="container border p-4 rounded-lg">
-      <img src={medilaw} alt="lensmart" className="image rounded-lg" />
-      <div className="overlay">
-      <div className="text w-full px-6">
-        <h1 className="text-lg mb-2">MediLaw</h1>  
-        <p className="text-sm my-5 text-justify text-slate-400"> Personal law service website: Review Section, Responsive, Authentication, </p> 
-         <a href="https://medilaw-bc770.web.app/" target="_blank" rel="noreferrer noopener"> <button className="btn btn-sm btn-outline btn-secondary mt-4 rounded-sm">Details<BiLinkExternal className="ml-2 text-lg"/></button></a>
-       </div>
-      </div>
-      </div>
-
-      {/* Education with excellence */}
-      <div className="container border p-4 rounded-lg">
-      <img src={education} alt="lensmart" className="image rounded-lg" />
-      <div className="overlay">
-      <div className="text w-full px-6">
-        <h1 className="text-lg mb-2">Education With Excellence</h1>  
-        <p className="text-sm my-5 text-justify text-slate-400"> Education website: Login, Signup, Responsive, Authentication, Online Reading, PDF Download</p> 
-        <a href="https://education-with-excellence.web.app/" target="_blank" rel="noreferrer noopener" ><button className="btn btn-sm btn-outline btn-secondary mt-4 rounded-sm">Details<BiLinkExternal className="ml-2 text-lg"/> </button></a>
-       </div>
-      </div>
-      </div>
-
-       
-      </div>
     </div>
   );
 };

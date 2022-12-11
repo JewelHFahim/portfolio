@@ -1,10 +1,10 @@
 import React from "react";
-import profile from "../../Assets/Profile.jpeg";
+import profile2 from "../../Assets/Profile.jpeg";
+import "./About.css";
 
 const About = () => {
   return (
     <div className=" flex-col lg:grid grid-cols-2 pt-4 lg:mx-10">
-
       <div className="text-slate-400 mx-10">
         <div className=" flex items-center">
           <p className="lg:text-3xl font-semibold mt-2 pb-4 text-slate-300">
@@ -12,11 +12,12 @@ const About = () => {
           </p>
           <div className="  w-32 lg:w-72 h-[1px] bg-slate-400 ml-4"></div>
         </div>
+
         <p className="text-justify">
-        Hello! My name is Jewel and I enjoy creating things that live on the internet. 
-          I’m a Front-End Developer located in Bangladesh. I have a serious
-          passion for UI effects, animations and creating intuitive, dynamic
-          user experiences.
+          Hello! My name is Jewel and I enjoy creating things that live on the
+          internet. I’m a MERN STack Developer located in Bangladesh. I have a
+          serious passion for UI effects, animations and creating intuitive,
+          dynamic user experiences.
         </p>
 
         <p className="my-3 text-justify">
@@ -59,16 +60,14 @@ const About = () => {
         </div>
       </div>
 
-      <div className=" mt-20 mb-10 ml-8">
+      <div className="box mt-20 mb-10 lg:ml-8 flex justify-center ">
         <img
-          className="border border-secondary p-2 rounded-md"
-          style={{ width: "350px", height: "380px" }}
-          src={profile}
-          alt=""
+          className="content border border-secondary p-2 rounded-full "
+          style={{ width: "350px", height: "350px" }}
+          src={profile2}
+          alt="profile pic"
         />
       </div>
-
-
     </div>
   );
 };
