@@ -1,7 +1,24 @@
-import React from "react";
+import React, { useRef } from "react";
 import { BsFacebook, BsLinkedin, BsInstagram, BsTwitter, BsWhatsapp, BsTelephoneForward } from "react-icons/bs";
+import emailjs from '@emailjs/browser';
+import { toast } from "react-hot-toast";
 
 const Contact = () => {
+
+
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_e9zelfu', 'template_0hqlm1a', form.current, 'IQNsjorEPhNdAX3lS')
+      .then((result) => {
+          console.log(result.text);
+          toast.success("Message Sent")
+          form.current.reset();
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
 
   return (
@@ -43,35 +60,50 @@ const Contact = () => {
           <span className="font-bold">jewelhfahim@gmail.com</span>{" "}
         </p>
 
-        <form className="">
+        <form ref={form} onSubmit={sendEmail} className="">
           <div className="grid grid-cols-2 gap-3 mb-3">
             <input
+              name="to_name" 
               type="text"
               placeholder="Name"
               className="input input-bordered input-secondary rounded-none bg-[#203555]"
             />
             <input
+              name="from_name"
               type="text"
               placeholder="Email"
               className="input input-bordered input-secondary rounded-none bg-[#203555]"
             />
           </div>
           <input
+          name="subject"
             type="text"
             placeholder="Subject"
             className="input input-bordered input-secondary rounded-none w-full mb-3 bg-[#203555]"
           />
           <textarea
+            name="message" 
             className="textarea textarea-secondary rounded-none h-28 mb-3 w-full bg-[#203555]"
             placeholder="Message"
           ></textarea>
 
           <div className="text-right">
-            <button className="btn btn-outline btn-secondary rounded-none text-right">
+            <button type="submit" className="btn btn-outline btn-secondary rounded-none text-right">
               Send message
             </button>
           </div>
         </form>
+
+        {/* <form ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="user_name" />
+      <label>Email</label>
+      <input type="email" name="user_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
+    </form> */}
+        
       </div>
     </div>
   );
