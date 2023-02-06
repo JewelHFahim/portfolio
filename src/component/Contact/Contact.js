@@ -32,7 +32,7 @@ const Contact = () => {
         
         <BsInstagram className="m-4 hover:text-secondary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." />
 
-        <a href="https://www.facebook.com/Xewel.H.Fahim" target="_blank" rel="noreferrer noopener">
+        <a href="https://www.facebook.com/jewelhfahim" target="_blank" rel="noreferrer noopener">
         <BsFacebook className="m-4 hover:text-secondary transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..." /></a>
 
         <a href="https://twitter.com/jewelhfahim" target="_blank" rel="noreferrer noopener">

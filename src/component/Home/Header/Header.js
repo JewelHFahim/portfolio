@@ -1,11 +1,11 @@
 import React from "react";
 import "./Header.css";
 import Typewriter from "typewriter-effect";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className=" ml-6 lg:mx-28 py-8">
-    
       <div className="text-secondary text-lg">
         <Typewriter
           options={{
@@ -30,9 +30,11 @@ const Header = () => {
         </p>
       </div>
 
-      <button className="mt-10 btn btn-outline btn-secondary rounded-sm">
-        Check out my course!
-      </button>
+      <Link to="/project">
+        <button className="mt-10 btn btn-outline btn-secondary rounded-sm">
+          Check out my Projects!
+        </button>
+      </Link>
     </div>
   );
 };

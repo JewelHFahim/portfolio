@@ -1,6 +1,8 @@
 import React from "react";
 import profile2 from "../../Assets/Profile.jpeg";
 import "./About.css";
+import Utilities from "../Utilities/Utilities";
+
 
 const About = () => {
   return (
@@ -35,28 +37,53 @@ const About = () => {
         <p className="mt-3">
           Here are a few technologies I’ve been working with recently:
         </p>
-        <div className="grid grid-cols-2 lg:grid-cols-3 mt-2">
-          <p>
-            <span className="text-secondary text-xl">•</span> JavaScript (ES6+)
-          </p>
-          <p>
-            <span className="text-secondary text-xl">•</span> React.js
-          </p>
-          <p>
-            <span className="text-secondary text-xl">•</span> Redux
-          </p>
-          <p>
-            <span className="text-secondary text-xl">•</span> Node.js
-          </p>
-          <p>
-            <span className="text-secondary text-xl">•</span> Express.js
-          </p>
-          <p>
-            <span className="text-secondary text-xl">•</span> MongoDB
-          </p>
-          <p>
-            <span className="text-secondary text-xl">•</span> TypeScript
-          </p>
+
+        {/* Frontend */}
+        <div className=" flex items-center lg:mt-10">
+        <p className=" lg:text-2xl  font-semibold mt-2 pb-4 text-slate-300"> Frontend</p>
+        <div className=" w-32 lg:w-72 h-[1px] bg-slate-400 ml-4"></div>
+      </div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 mb-6">
+          <Utilities>HTML</Utilities>
+          <Utilities>CSS</Utilities>
+          <Utilities>JavaScript (ES6+)</Utilities>
+          <Utilities>React.js</Utilities>
+          <Utilities>React Router</Utilities>
+          <Utilities>REST APIs</Utilities>
+          <Utilities>Redux</Utilities>
+          <Utilities>Bootstrap</Utilities>
+          <Utilities>Tailwind</Utilities>
+          <Utilities>Material UI</Utilities>
+          <Utilities>TypeScript</Utilities>
+        </div>
+
+        {/* Backend */}
+        <div className=" flex items-center">
+        <p className=" lg:text-2xl  font-semibold mt-2 pb-4 text-slate-300">Backend</p>
+        <div className=" w-32 lg:w-72 h-[1px] bg-slate-400 ml-4"></div>
+      </div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 mb-6">
+          <Utilities>Node.js</Utilities>
+          <Utilities>MongoDB</Utilities>
+          <Utilities>Express.js</Utilities>
+          <Utilities>Firebase</Utilities>
+        </div>
+
+        {/* Tools */}
+        <div className=" flex items-center">
+        <p className=" lg:text-2xl  font-semibold mt-2 pb-4 text-slate-300">Tool's</p>
+        <div className=" w-32 lg:w-72 h-[1px] bg-slate-400 ml-4"></div>
+      </div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 mb-6">
+          <Utilities>Chrome Dev Tools</Utilities>
+          <Utilities>Redux Dev Tools</Utilities>
+          <Utilities>GitHub</Utilities>
+          <Utilities>Netlify</Utilities>
+          <Utilities>Visual Studio Code</Utilities>
+          <Utilities>React Testing Library</Utilities>
+          <Utilities>Figma</Utilities>
+          <Utilities>Vercel</Utilities>
+          <Utilities>WordpressElementor</Utilities>
         </div>
       </div>
 
